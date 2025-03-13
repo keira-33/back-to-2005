@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to 2005</title>
+</head>
+
+<body>
+    <header>
+        <h2>Back to 2005</h2>
+        <h3>Under Construction!</h3>
+
+    </header>
+    <main>
+        <p>
+            For this website I plan on making a website that will resemble a time capsule for the year I was born
+            (2005). I plan to cover different aspects from the year such as world events, pop culture, and technology.
+            The world events page will cover content like major (political, economic, etc.) events, “firsts” that
+            happened, or other important facts. The pop culture page will cover content like popular music, TV/films,
+            social media, and more. The technology page will cover innovations in computers/phones, new apps or
+            websites, and more.
+        </p>
+        <ul>
+            <a href="pages/world-events.html"> World Events </a> <br>
+            <a href="pages/pop-culture.html"> Pop Culture </a> <br>
+            <a href="pages/technology.html"> Technology </a>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keira Productions</p>
+
+    </footer>
+</body>
+
+</html>
+
+<!-- Javascript to Autofill the Current Year in the Footer -->
+<script>
+    window.onload = function () {
+        var d = new Date();
+        document.getElementById("copyright").innerHTML = d.getFullYear();
+    }
+</script>
