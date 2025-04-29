@@ -1,47 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ADOBE FONT LINKS -->
+    <link rel="stylesheet" href="https://use.typekit.net/psp7mwf.css">
+    <!--SlickNav-->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+    
+    <link rel="stylesheet" href="styles/main.css">
+
     <title>Back to 2005</title>
 </head>
-
 <body>
+    <div id="logo-nav">
+        <div id="logo-and-text">
+            <img src="images/2005-logo.png" alt="Homepage Logo" title="Homepage" class="logoimage">
+            <h2>Back to 2005</h2>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/technology.html">Technology</a></li>
+                <li><a href="pages/pop-culture.html">Pop Culture</a></li>
+                <li><a href="pages/world-events.html">World Events</a></li>
+            </ul>
+        </nav> 
+    </div>   
     <header>
-        <h2>Back to 2005</h2>
-        <h3>Under Construction!</h3>
-
+        <div class="header-container">
+            <div class="vert-images-cover-page">
+                <div class="vert-image-grid">
+                    <div><img src="images/google-maps-launch.png" alt=""></div>
+                    <div><img src="images/hurricane-katrina-vertical.jpg" alt=""></div>
+                    <div><img src="images/live-8-concerts.jpg" alt=""></div>
+                    <div><img src="images/huygens-surface-2005.jpg" alt=""></div>
+                    <div><img src="images/youtube-2005.png" alt=""></div>
+                    <div><img src="images/apple-conf-2005.jpg" alt=""></div>
+                    <div><img src="images/pope-john-paul-II.png" alt=""></div>
+                </div>
+                <div class="vert-grid-text-overlay">
+                    <h1>To be opened in <br><span id="currentyear"></span>...</h1>
+                </div>
+            </div>
+            <div class="ripped-paper-top-img">
+                <img src="images/paper-ripped-top.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
-        <p>
-            For this website I plan on making a website that will resemble a time capsule for the year I was born
-            (2005). I plan to cover different aspects from the year such as world events, pop culture, and technology.
-            The world events page will cover content like major (political, economic, etc.) events, “firsts” that
-            happened, or other important facts. The pop culture page will cover content like popular music, TV/films,
-            social media, and more. The technology page will cover innovations in computers/phones, new apps or
-            websites, and more.
-        </p>
-        <ul>
-            <a href="pages/world-events.html"> World Events </a> <br>
-            <a href="pages/pop-culture.html"> Pop Culture </a> <br>
-            <a href="pages/technology.html"> Technology </a>
-        </ul>
-
+        <!-- REVERSE COUNTDOWN -->
+        <aside>
+            <div id="reverse-countdown">
+                <h2 id="countdown-h2">How much time has passed since 2005?</h2>
+                <h2 id="displaytimer"></h2>
+            </div>
+        </aside>
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- PROJECT EXPLANATION -->
+        <section>
+            <div class="project-explanation-container">
+                <div id="about-the-project-h2">
+                    <h2>About the Project</h2>
+                </div>                 
+                <div class="project-explanation-text">
+                    <p>Explain the project; describe the photos used in the header... etc. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- WHAT HAS HAPPENED SINCE -->
+        <section>
+            <div class="what-has-happened-since">
+                <div class="what-has-happened-p">
+                    <p>A lot has happened in the 20 years since 2005... covid, climate change, new tech, ..Ai , etc. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </p>
+                </div>
+                <div class="what-has-happened-photos">
+                    <div><img src="images/climate-change.jpeg" alt=""></div>
+                    <div><img src="images/covid-19.png" alt=""></div>
+                    <div><img src="images/AI.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; <span id="copyright"></span> Keira Productions</p>
-
+        <p>&copy; <span id="copyright"></span> Keira Frey Productions</p>
     </footer>
 </body>
-
 </html>
+<script src="js/scripts.js"></script>
 
-<!-- Javascript to Autofill the Current Year in the Footer -->
+<!-- Javascript for Countdown Timer below: -->
 <script>
-    window.onload = function () {
-        var d = new Date();
-        document.getElementById("copyright").innerHTML = d.getFullYear();
-    }
-</script>
+    // Set the date we're counting down to
+    var startDate = new Date("Dec 31, 2005 23:59:59").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = now - startDate;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var years = Math.floor(distance/(1000*60*60*24*365));
+      var days = Math.floor((distance %(1000 * 60 * 60 * 24 * 365))/(1000*60*60*24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an html element
+      document.getElementById("displaytimer").innerHTML = years + " years, "+ days + " days, " + hours + " hours, "
+      + minutes + " minutes, and " + seconds + " seconds ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("displaytimer").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
