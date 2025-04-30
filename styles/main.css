@@ -134,8 +134,6 @@ header{
 }
 .paper-img-top-text h2{
     font-size: 290%;
-    /* ADD IN SCRAPBOOK LIKE IMAGE AS BG */
-    background-image: url(../images/tape-piece.png);
 }
 .vert-grid-text-overlay{
     position: absolute;
@@ -198,9 +196,6 @@ main{
     justify-content: center;
     align-items: center;
     gap: 5em;
-}
-.project-explanation-container img{
-    max-width: 80px;
 }
 .project-explanation-text p {
     max-width: 80ch;
@@ -268,6 +263,26 @@ main{
     pointer-events: none;
 }
 
+/* RETURN TO TOP BUTTON CSS */
+.return-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 28px;
+    bottom: 45px;
+    z-index: 9999; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    transition: all ease-in-out 300ms;
+}
+ .return-to-top img {
+     max-width: 50px;
+}
+ .return-to-top:hover {
+    background-color: rgba(215, 61, 159, 0.328);
+}
+
 /* FOOTER CSS */
 footer{
     text-align: center;
@@ -292,13 +307,13 @@ footer{
         display: block;
     }
     .slicknav_menu {
-        background-color: darkgreen;
+        background-color: #FFD1DC;
         position: fixed;
         /* positon absolute makes it stay in the same spot but fixed means it comes w you when you scroll*/
         right: 0px; 
         top: 0px;
     }
     .slicknav_nav a {
-        text-shadow: 3px 3px 8px black;
+        text-shadow: 3px 3px 8px rgba(215, 61, 159,.85);
     }
 }

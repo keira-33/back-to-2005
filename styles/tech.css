@@ -1,0 +1,183 @@
+.tech-now-then-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+#tech-now-then-h2{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 400%;
+    max-width: 40ch;
+    text-align: center;
+    color: rgb(83, 8, 53);
+    margin-bottom: .25em;
+}
+#instructions{
+    font-size: 150%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: -80px;
+}
+.instructions-h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap:0;
+}
+/* hover illusion code borrowed from online */
+.old-new{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+.old-new img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border: 10px solid rgba(83, 8, 53, 0.728);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease;
+    object-position: center;
+    object-fit: cover;
+}
+.old-new .new{
+    opacity: 0;
+    z-index: 2;
+}
+.old-new:hover .new{
+    opacity: 1;
+}
+.old-new:hover .old{
+    opacity: 0;
+}
+/* end hover illusion */
+.tech-old-new-photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+#old-platforms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#old-platforms-h2{
+    font-size: 400%;
+    max-width: 40ch;
+    text-align: center;
+    color: rgb(83, 8, 53);
+    margin-bottom: .25em;
+}
+/* SLIDESHOW CSS */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagecarousel {
+    position: relative;
+}
+.image{
+    display: none;
+}
+/* first of type selects first element with this class name */
+.image:first-of-type {
+    display: block;
+}
+
+.image img {
+    border: 10px solid white;
+    border-bottom: 50px solid white;
+    border-radius: 2px;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 400%;
+    color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all ease-in-out 500ms;
+}
+.prev {
+    left: 5px;
+}
+.next {
+    right: 5px;
+}
+.prev:hover, .next:hover {
+    color: rgba(138, 19, 129, 0.672);
+}
+/* hide prev and next buttons */
+.prev, .next {
+    display: none;
+}
+.dots {
+    margin-top: .5em;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+.dot {
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.active {
+    background-color: rgba(138, 19, 129, 0.672);
+}
+/* every image has the class fadeout in index.html */
+.fadeout {
+    animation: fade 1700ms;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
+}
+
+/* TECH PARAGRAPH */
+.tech-paragraph-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tech-paragragh{
+    line-height: 30px;
+    max-width: 150ch;
+    padding-bottom: 1em;
+}
+/* media queries */
+@media (max-width: 800px) {
+    .image img{
+        display: full-width;
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .active {
+        background-color: rgb(46, 64, 228);
+    }
+}

@@ -19,7 +19,8 @@
             $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
         });
     </script>
-    
+
+    <link rel="shortcut icon" href="images/2005-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
 
     <title>Back to 2005</title>
@@ -74,7 +75,7 @@
         <section>
             <div class="project-explanation-container">
                 <div id="about-the-project-h2">
-                    <h2>About the Project</h2>
+                    <h2>About The Project</h2>
                 </div>                 
                 <div class="project-explanation-text">
                     <p>Explain the project; describe the photos used in the header... etc. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
@@ -104,12 +105,23 @@
             </div>
         </section>
     </main>
+
+    <!-- Return to Top Button -->
+    <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="images/back-to-top-icon.jpg" alt=""></button></div>
+
     <footer>
         <p>&copy; <span id="copyright"></span> Keira Frey Productions</p>
     </footer>
 </body>
 </html>
 <script src="js/scripts.js"></script>
+
+<!-- copyright date JavaScript -->
+<script>
+    const d = new Date();
+    document.getElementById('copyright').innerHTML = d.getFullYear();
+    document.getElementById('currentyear').innerHTML = d.getFullYear();
+</script>
 
 <!-- Javascript for Countdown Timer below: -->
 <script>
@@ -142,4 +154,4 @@
         document.getElementById("displaytimer").innerHTML = "EXPIRED";
       }
     }, 1000);
-    </script>
+</script>

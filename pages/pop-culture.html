@@ -3,9 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ADOBE FONT LINKS -->
+    <link rel="stylesheet" href="https://use.typekit.net/psp7mwf.css">
+    <!--SlickNav-->
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+    <link rel="shortcut icon" href="../images/2005-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pop-cult.css">
     <title>Pop Culture</title>
+
 </head>
 <body>
-    <h3>"Under Construction"</h3>
+    <div id="logo-nav">
+        <div id="logo-and-text">
+            <img src="../images/2005-logo.png" alt="Homepage Logo" title="Homepage" class="logoimage">
+            <h2>Back to 2005</h2>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="pop-culture.html">Pop Culture</a></li>
+                <li><a href="world-events.html">World Events</a></li>
+            </ul>
+        </nav> 
+    </div>   
+    <header>
+        <div class="header-container">
+            <div class="vert-images-cover-page">
+                <div class="vert-image-grid">
+                    <div><img src="../images/youtube-2005.png" alt=""></div>
+                    <div><img src="../images/american-idol.jpg" alt=""></div>
+                    <div><img src="../images/hp-goblet-of-fire.jpg" alt=""></div>
+                    <div><img src="../images/guitar-hero.jpg" alt=""></div>
+                    <div><img src="../images/star-wars-ep-III.jpg" alt=""></div>
+                    <div><img src="../images/mariah-carey-2005.jpg" alt=""></div>
+                    <div><img src="../images/live-8-concerts.jpg" alt=""></div>
+                </div>
+                <div class="vert-grid-text-overlay">
+                    <h1>Pop Culture <br> in 2005</h1>
+                </div>
+            </div>
+            <div class="ripped-paper-top-img">
+                <img src="../images/paper-ripped-top.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- NOTABLE MOMENTS IN POP CULTURE -->
+        <section>
+            <div class="project-explanation-container">
+                <div id="notable-moments-h2">
+                    <h2>Notable Pop Culture Moments</h2>
+                </div>
+                    <div class="moments-list">
+                        <ul>
+                            <li><b>In Film:</b> The highest-grossing film of 2005 was Star Wars: Episode III: Revenge of the Sith (grossing $380,270,577 domestically), followed by The Chronicles of Narnia and Harry Potter and the Goblet of Fire. </li>
+                            <li><b>In Music:</b> The top 3 singles on the 2005 Billboard Year-End Hot 100 chart were: "We Belong Together" by Mariah Carey, "Hollaback Girl" by Gwen Stefani, and "Let Me Love You"	by Mari.</li>
+                            <li class="column-break"><b>In Fashion &amp; Trends:</b> Popular fashion trends included trucker hats, chunky belts, Juicy Couture (velour) tracksuits, graphic tees, and more.</li> 
+                            <li><b>In Social Media:</b> MySpace was the most popular platform of the year, followed by Facebook. Youtube had its launch in 2005.</li>
+                            <li><b>In Video Games:</b> The top 3 best-selling video games were Madden NFL 06, Gran Turismo 4, and Nintendogs. The most popular gaming consoles were the PlayStation 2, Xbox, and GameCube, along with the most popular portable console: the Nintendo DS. </li>
+                        </ul>
+                </div>                 
+            </div>
+        </section>
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- Music Generator -->
+        <aside>
+            <div id="music-generator">
+                <h2 id="music-generator-h2">Click to Generate a Popular Song from the Year 2005:</h2>
+                <div class="button-container">
+                    <div class="buttonelements">
+                    <p id="song"></p>
+                    <p id="artist"></p>
+                    <!-- src gets filled in by the js -->
+                    <img id="image" src="" alt="Author image" style="max-width: 200px;">
+                    </div>
+                    <button id="generate">Generate</button>
+               </div>
+            </div>
+        </aside>    
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- POP CULTURE PARAGRAPH -->
+        <section>
+            <div class="pop-c-paragraph-container">
+                <div class="pop-c-paragragh">
+                    <p>The popularity of the new DVD format (and the start of a new optical disc format called Blu-Ray) doomed the once-ubiquitous VHS videotape cassette format. By the end of 2005, DVD sales were more than $22 billion and VHS was slumping badly but still able to pull in $1.5 billion. At the same time, JVC, the company that introduced the Video Home System (VHS) format to the US in 1977, announced that it would no longer make stand-alone videocassette recorders, further making it a "dead technology." When Star Wars: Episode III - Revenge of the Sith (2005) was released on home video late in the year, it was only available on DVD, marking the first time an installment of the Stars Wars franchise-saga was not on VHS. More evidence surfaced that Hollywood and the computer/video games industry were moving closer together. Steven Spielberg, a gamer himself, agreed to develop (and executive produce) three original games for Electronic Arts (Los Angeles branch). Computer games already were showing comparable income to the movie industry, i.e., the game Halo 2 for the XBox console system sold 2.4 million units in its first 24 hours of sales and made $125 million in gross receipts - in addition, Microsoft was in negotiations with Universal and Fox to turn the game into a movie. (filmsite.org)
+                    </p>
+                </div>
+                <div class="what-has-happened-photos">
+                    <div><img src="../images/blue-ray.jpg" alt=""></div>
+                    <div><img src="../images/computer-games.webp" alt=""></div>
+                    <div><img src="../images/steven-spielberg.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Return to Top Button -->
+    <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="../images/back-to-top-icon.jpg" alt=""></button></div>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keira Frey Productions</p>
+    </footer>
 </body>
 </html>
+<script src="../js/scripts.js"></script>
+<!-- copyright date JavaScript -->
+<script>
+    const d = new Date();
+    document.getElementById('copyright').innerHTML = d.getFullYear();
+</script>

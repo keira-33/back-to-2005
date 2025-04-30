@@ -3,9 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ADOBE FONT LINKS -->
+    <link rel="stylesheet" href="https://use.typekit.net/psp7mwf.css">
+    <!--SlickNav-->
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+    <link rel="shortcut icon" href="../images/2005-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/tech.css">
     <title>Technology</title>
+
 </head>
 <body>
-    <h3>"Under Construction"</h3>
+    <div id="logo-nav">
+        <div id="logo-and-text">
+            <img src="../images/2005-logo.png" alt="Homepage Logo" title="Homepage" class="logoimage">
+            <h2>Back to 2005</h2>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="pop-culture.html">Pop Culture</a></li>
+                <li><a href="world-events.html">World Events</a></li>
+            </ul>
+        </nav> 
+    </div>   
+    <header>
+        <div class="header-container">
+            <div class="vert-images-cover-page">
+                <div class="vert-image-grid">
+                    <div><img src="../images/tech-imgs/first-universe-simulation.jpeg" alt=""></div>
+                    <div><img src="../images/tech-imgs/ipod-nano-first-gen.jpg" alt=""></div>
+                    <div><img src="../images/tech-imgs/most-popular-phone-2005.jpg" alt=""></div>
+                    <div><img src="../images/tech-imgs/my-space.jpg" alt=""></div>
+                    <div><img src="../images/tech-imgs/reddits-launch.png" alt=""></div>
+                    <div><img src="../images/tech-imgs/xbox-360.jpg" alt=""></div>
+                    <div><img src="../images/tech-imgs/youtube-launch.jpg" alt=""></div>
+                </div>
+                <div class="vert-grid-text-overlay">
+                    <h1>Technology <br> in 2005</h1>
+                </div>
+            </div>
+            <div class="ripped-paper-top-img">
+                <img src="../images/paper-ripped-top.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- TECH NOW AND THEN -->
+        <section>
+            <div class="tech-now-then-container">
+                <div class="instructions-h2">
+                    <div id="tech-now-then-h2">
+                        <h2>Technology Now and Then:</h2>
+                    </div>
+                    <h5 id="instructions">Hover over the modern tech to see how they looked in 2005.</h5>
+                </div>
+                <!--Images of old/new technology-->
+                <div class="tech-old-new-photos">
+                    <div class="old-new">
+                        <img class="old" src="../images/tech-imgs/modern-iphone.jpg" alt="">
+                        <img class="new" src="../images/tech-imgs/nokia-110.jpg" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/tech-imgs/macbook-2025.png" alt="">
+                        <img class="new" src="../images/tech-imgs/dell-laptop-2005.png" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/tech-imgs/play-station-5.png" alt="">
+                        <img class="new" src="../images/tech-imgs/playstation-2.jpg" alt="">
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- Popular Modern Platforms in 2005-->
+        <aside>
+            <div id="old-platforms">
+                <h2 id="old-platforms-h2">Social Media Platforms in 2005:</h2>
+                <!--SLIDE SHOW/CAROUSEL-->
+                <div class="container">
+                    <div class="imagecarousel">
+                        <div class="image fadeout"><img src="../images/tech-imgs/my-space.jpg" alt=""></div>
+                        <div class="image fadeout"><img src="../images/tech-imgs/reddits-launch.png" alt=""></div>
+                        <div class="image fadeout"><img src="../images/tech-imgs/youtube-launch.jpg" alt=""></div>
+                        <div class="image fadeout"><img src="../images/tech-imgs/yahoo-360.jpg" alt=""></div>
+                        <div class="image fadeout"><img src="../images/tech-imgs/live-journal.jpg" alt=""></div>
+                        <div class="image fadeout"><img src="../images/tech-imgs/facebook.jpg" alt=""></div>
+                        <div class="image fadeout"><img src="../images/tech-imgs/bebo.jpg" alt=""></div>
+                        <div class="prev"><i class="fa-solid fa-chevron-left" onclick="showImage(-1)"></i></div>
+                        <div class="next"><i class="fa-solid fa-chevron-right" onclick="showImage(1)"></i></div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>        
+            </div>
+        </aside>    
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- NEW TECH PARAGRAPH -->
+        <section>
+            <div class="tech-paragraph-container">
+                <div class="tech-paragragh">
+                    <p> An international group of astrophysicists known as the Virgo Consortium has created the largest and most realistic model to date of cosmic evolution (see visualizations below). The consortium — a collaboration between German, British, Canadian, and U.S. astrophysicists and led by scientists from the Max-Planck-Institute for Astrophysics — simulated the growth of structure in a representative cube of the universe roughly 2 billion light-years on each side.
+                        Because of the simulation’s size — dubbed the Millennium Simulation — the astrophysicists were able to observe evolutionary links between objects. Among the group’s findings are a possible explanation for early quasar formation, and another correlation between the sound waves from the cosmic microwave background (CMB) and the universe’s present structure.
+                        The number of particles needed for the simulation is staggering: Roughly 10 billion particles were included to analyze the positions, velocities, and intrinsic properties of 20 million galaxies. The Millennium Simulation follows structure evolution from when the universe was 10 million years old (z=127) to the present day — and produced 20 terabytes of data.
+                        The astrophysicists used the widely accepted initial conditions observed by both the Sloan Digital Sky Survey (SDSS) and the Wilkinson Microwave Anisotropy Probe (WMAP): The universe is composed of 4.5 percent ordinary, or baryonic, matter; 20.5 percent cold dark matter (CDM); and 75 percent dark energy. (astronomy.com)</p>
+                </div>
+                <div class="what-has-happened-photos">
+                    <div><img src="../images/tech-imgs/first-universe-simul-crop-1.png" alt=""></div>
+                    <div><img src="../images/tech-imgs/first-universe-sim-crop-2.png" alt=""></div>
+                    <div><img src="../images/tech-imgs/first-universe-sim-crop-3.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Return to Top Button -->
+    <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="../images/back-to-top-icon.jpg" alt=""></button></div>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keira Frey Productions</p>
+    </footer>
 </body>
 </html>
+<script src="../js/scripts.js"></script>
+<!-- copyright date JavaScript -->
+<script>
+    const d = new Date();
+    document.getElementById('copyright').innerHTML = d.getFullYear();
+</script>

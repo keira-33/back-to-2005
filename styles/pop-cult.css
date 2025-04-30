@@ -1,0 +1,100 @@
+/* * {
+    border: 1px solid red;
+} */
+/* NOTABLE MOMENTS IN POP CULTURE SECTION */
+.project-explanation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0em;
+    text-align: center;
+}
+#notable-moments-h2 h2{
+    padding-bottom: 0;
+    margin-bottom: .25em;
+    font-size: 500%;
+    text-align: center;
+    text-decoration: overline;
+    color: rgb(83, 8, 53);
+    padding-right: 0;
+    margin-right: 0;
+}
+#moments-list-image img{
+    max-width: 500px;
+}
+.column-break {
+    padding-top: 1.8rem;
+    break-before: column;
+}
+.moments-list{
+    column-count: 2;
+    padding-left: 0;
+    margin-left: -30px;
+    font-size: 180%;
+    text-align: left;
+}
+.moments-list ul{
+    list-style-type: none;
+}
+.moments-list li{
+    width: 30ch;
+    padding-bottom: .5em;
+}
+#music-generator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#music-generator-h2{
+    font-size: 300%;
+    max-width: 25ch;
+    line-height: 1.25em;
+    margin-bottom: 0;
+    color:rgb(83, 8, 53);
+}
+#image{
+    border: 10px solid rgba(117, 42, 83, 0.523);
+    border-bottom: 35px solid rgba(117, 42, 83, 0.523);
+}
+#generate{
+    margin-top: 1.5rem;
+    font-size: 16px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(117, 42, 83, 0.523);
+    border: 2px solid rgba(117, 42, 83, 0.523);
+    border-radius: 20% 20% 20% 20%;
+}
+#song, #artist{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150%;
+    line-height: 1rem;
+}
+#song{
+    padding-top: .5rem;
+    font-weight: 500;
+}
+#artist{
+    font-style: italic;
+}
+.pop-c-paragraph-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pop-c-paragragh{
+    line-height: 30px;
+    max-width: 150ch;
+    padding-bottom: 1em;
+}
