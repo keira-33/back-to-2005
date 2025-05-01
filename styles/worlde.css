@@ -1,0 +1,370 @@
+/* GRID IMAGE */
+#spain-legalizes-ssm-img img{
+    object-position: top left;
+}
+/* PRICES NOW THEN SECTION */
+.prices-now-then-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+#prices-now-then-h2{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 400%;
+    max-width: 40ch;
+    text-align: center;
+    color: rgb(83, 8, 53);
+    margin-bottom: .25em;
+}
+#instructions{
+    font-size: 150%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: -80px;
+}
+.instructions-h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap:0;
+}
+/* hover illusion code borrowed from online */
+.old-new{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+.old-new img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border: 10px solid rgba(83, 8, 53, 0.728);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease;
+    object-position: center;
+    object-fit: cover;
+}
+.old-new .new{
+    opacity: 0;
+    z-index: 2;
+}
+.old-new:hover .new{
+    opacity: 1;
+}
+.old-new:hover .old{
+    opacity: 0;
+}
+/* end hover illusion */
+.prices-old-new-photos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    row-gap: 0;
+}
+/* IMPORTANT FIGURES */
+/* SLIDESHOW CSS */
+#important-figures-slides-container-h2{
+    max-width: 40ch;
+    text-align: center;
+    color: rgb(83, 8, 53);
+    margin-bottom: .25em;
+    font-size: 500%;
+    text-align: center;
+    text-decoration: overline;
+}
+#important-figures-slides-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.imagesanddotscontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: center;
+    /* align-items: center; */
+}
+#imagesanddots{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#important-figures-txt{
+    max-width: 60ch;
+    font-size: 150%;
+    line-height: 1.25em;
+    column-count: 2;
+    padding-bottom: 2em;
+}
+#column-break{
+    padding-top: 1.8rem;
+    break-before: column;
+}
+#important-figures-txt li{
+    margin-bottom: .25em;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagecarousel {
+    position: relative;
+}
+.image{
+    display: none;
+}
+/* first of type selects first element with this class name */
+.image:first-of-type {
+    display: block;
+}
+
+.image img {
+    margin-top: 1.5em;
+    border: 10px solid white;
+    border-bottom: 50px solid white;
+    border-radius: 2px;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top left;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 400%;
+    color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all ease-in-out 500ms;
+}
+.prev {
+    left: 5px;
+}
+.next {
+    right: 5px;
+}
+.prev:hover, .next:hover {
+    color: rgba(138, 19, 129, 0.672);
+}
+/* hide prev and next buttons */
+.prev, .next {
+    display: none;
+}
+.dots {
+    margin-top: .5em;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+.dot {
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.active {
+    background-color: rgba(138, 19, 129, 0.672);
+}
+/* every image has the class fadeout in index.html */
+.fadeout {
+    animation: fade 1700ms;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
+}
+/* world events stories paragraph css */
+.stories-paragraph-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stories-paragragh{
+    line-height: 30px;
+    max-width: 150ch;
+    padding-bottom: 1em;
+}
+
+/* media queries */
+@media (max-width: 767px){
+    /* HEADER CSS */
+    .vert-images-cover-page{
+        height: 250px;
+    }    
+    .vert-grid-text-overlay h1{
+        padding-top: .3em;
+        font-size: 70%;
+        letter-spacing: .15rem;
+        line-height: 1em;
+    }
+    .ripped-paper-top-img{
+        top: 140px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }  
+    /* PRICES NOW THEN SECTION */
+    .prices-now-then-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    #prices-now-then-h2{
+        margin-top: -3.3em;
+        font-size: 190%;
+        max-width: 40ch;
+        text-align: center;
+        color: rgb(83, 8, 53);
+        margin-bottom: .25em;
+    }
+    #instructions{
+        font-size: 120%;
+        text-align: center;
+        max-width: 30ch;
+        margin-top: -25px;
+    }
+    .prices-old-new-photos{
+        margin-top: -30px;
+        gap: 0em;
+    }
+    /* IMPORTANT FIGURES */
+    /* SLIDESHOW CSS */
+    #important-figures-slides-container-h2{
+        max-width: 15ch;
+        text-align: center;
+        color: rgb(83, 8, 53);
+        margin: .25em auto;
+        margin-bottom: .35em;
+        font-size: 40.6px;
+        text-align: center;
+        text-decoration: none;
+    }
+    #important-figures-slides-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: visible;
+        max-height: none;
+        height: auto;
+        flex-grow: 1;
+        min-height: 100vh;
+    }
+    #important-figures-txt{
+        /* max-width: 35ch;
+        font-size: 16px;
+        line-height: 1.25em;
+        column-count: 1;
+        padding-bottom: 2em;
+        overflow-x: visible;
+        max-height: none;
+        border: 3px solid red; */
+        max-width: 35ch;
+        font-size: 16px;
+        line-height: 1.25em;
+        column-count: 1;
+        padding-bottom: 2em;
+        max-height: none;
+        overflow: visible;
+    }
+    #important-figures-txt {
+        background: rgba(199, 74, 74, 0.3); /* light pink */
+    }
+    #column-break{
+        padding-top: 0; 
+        break-before: none;
+    }
+    ol, li {
+        break-inside: avoid;
+    }
+    .imagesanddotscontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        /* align-items: center; */
+    }
+    #imagesanddots{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #important-figures-txt li{
+        margin-bottom: .25em;
+        overflow-x: visible;
+        max-height: none;
+    }
+    .container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagecarousel {
+        position: relative;
+        margin: 0 auto;
+    }
+    .image{
+        display: none;
+    }
+    /* first of type selects first element with this class name */
+    .image:first-of-type {
+        display: block;
+    }
+    .image img {
+        margin: 0 auto;
+        margin-top: 1em;
+        width: 300px;
+        height: 300px;
+    }
+    .active {
+        background-color: rgba(138, 19, 129, 0.672);
+    }
+    /* world events stories paragraph css */
+    .stories-paragraph-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .stories-paragragh{
+        line-height: 30px;
+        max-width: 35ch;
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+}

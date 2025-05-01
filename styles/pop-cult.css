@@ -20,9 +20,6 @@
     padding-right: 0;
     margin-right: 0;
 }
-#moments-list-image img{
-    max-width: 500px;
-}
 .column-break {
     padding-top: 1.8rem;
     break-before: column;
@@ -41,6 +38,7 @@
     width: 30ch;
     padding-bottom: .5em;
 }
+/* MUSIC GENERATOR */
 #music-generator{
     display: flex;
     flex-direction: column;
@@ -86,6 +84,7 @@
 #artist{
     font-style: italic;
 }
+/* POP CULTURE PARAGRAPH */
 .pop-c-paragraph-container{
     display: flex;
     flex-direction: column;
@@ -97,4 +96,83 @@
     line-height: 30px;
     max-width: 150ch;
     padding-bottom: 1em;
+}
+
+/* media queries */
+@media (max-width: 767px){
+    /* HEADER CSS */
+    .vert-images-cover-page{
+        height: 250px;
+    }    
+    .vert-grid-text-overlay h1{
+        padding-top: .3em;
+        font-size: 78%;
+        letter-spacing: .15rem;
+        line-height: 1em;
+    }
+    .ripped-paper-top-img{
+        top: 140px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }    
+    /* NOTABLE MOMENTS IN POP CULTURE SECTION */
+    .project-explanation-container{
+        /* consistent w tech one */
+        margin-top: -3.2em;
+    }
+    #notable-moments-h2 h2{
+        margin-bottom: .25em;
+        font-size: 230%;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 0;
+    }
+    .column-break {
+        padding-top: 0;
+        break-before: none;
+    }
+    .moments-list{
+        display: flex;
+        flex-direction: column;
+        max-width: 20ch;
+        margin: 0 auto;
+        column-count: 1;
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 120%;
+        text-align: center;
+    }
+    .moments-list ul{
+        list-style-type: none;
+    }
+    .moments-list li{
+        width: 28ch;
+        line-height: 1.9rem;
+        padding-bottom: .5em;
+    }
+    /* MUSIC GENERATOR */
+    #music-generator{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #music-generator-h2{
+        font-size: 230%;
+        max-width: 15ch;
+    }
+    #generate{
+        margin-top: 1em;
+        font-size: 16px;
+    }
+    /* POP CULTURE PARAGRAPH */
+    .pop-c-paragraph-container{
+        padding-top: 1.5em;
+    }
+    .pop-c-paragragh{
+        line-height: 30px;
+        max-width: 35ch;
+        padding-bottom: 1em;
+    }
 }

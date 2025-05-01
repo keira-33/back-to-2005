@@ -1,6 +1,10 @@
 /* * {
     border: 1px solid red;
 } */
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,7 +14,9 @@ body{
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    max-width: 100%;
+    overflow-x: hidden;
 }
  /* NAV CSS  */
 #logo-nav{
@@ -109,31 +115,6 @@ header{
     display: block;
     object-fit:fill;
     /* transform: scale(-1, -1); */
-}
-.paper-img-top-text{
-    position:absolute ;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: medium;
-    text-shadow: 3px 3px 5px rgba(245, 245, 245, 0.303);
-    z-index: 3;
-    display: flex;
-    flex-direction: row;
-    gap: 22em;
-    align-items: center;
-    justify-content: center;
-    padding-top: 3rem;
-    height: 80vh;
-    width: 100%;
-    /* adobe font */
-    font-family: "brown-pro", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.paper-img-top-text h2{
-    font-size: 290%;
 }
 .vert-grid-text-overlay{
     position: absolute;
@@ -300,6 +281,7 @@ footer{
 
 /* media queries */
 @media (max-width: 767px) {
+    /* NAV MENU */
     #nav_menu {
         display: none;
     }
@@ -308,12 +290,164 @@ footer{
     }
     .slicknav_menu {
         background-color: #FFD1DC;
-        position: fixed;
-        /* positon absolute makes it stay in the same spot but fixed means it comes w you when you scroll*/
+        width: 100%;
+        z-index: 9999;
         right: 0px; 
         top: 0px;
     }
+    .slicknav_nav{
+        width: 100%;
+        background-color: #FFD1DC;
+    }
     .slicknav_nav a {
         text-shadow: 3px 3px 8px rgba(215, 61, 159,.85);
+    }
+    #logo-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        max-height: 3000vh;
+        background-color: rgba(83, 8, 53, 0.942);
+    }
+    #logo-and-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo-and-text h2{
+        font-size: 200%;
+        max-width: 10ch;
+        margin: .25em 0;
+    }
+    #logo-nav img{
+        max-width: 50px;
+        padding: 1em 1em;
+        filter: brightness(100);
+    }
+    /* HEADER CSS */
+    .vert-images-cover-page{
+        height: 450px;
+    }
+    .ripped-paper-top-img{
+        top: 280px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .vert-grid-text-overlay{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        text-align: center;
+        margin: auto;
+        z-index: 1;
+        font-size: 500%;
+        text-shadow: 3px 3px 5px rgba(245, 245, 245, 0.303);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+    }
+    .vert-grid-text-overlay h1{
+        padding-top: .3em;
+        font-size: 110%;
+        letter-spacing: .15rem;
+        line-height: 1em;
+    }
+    /* STAR DIVIDES AWAY */
+    .star-dividers{
+        display: none;
+    }
+    /* COUNTDOWN CSS */
+    #reverse-countdown{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 30ch;
+        line-height: 50px;
+        font-size: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.482);
+    }
+    #countdown-h2{
+        padding-bottom: 0;
+        margin: .8em 1em;
+        margin-bottom: .3em;
+        font-size: 230%;
+        max-width: 65ch;
+    }
+    #displaytimer{
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 200%;
+        margin: 0 40px;
+        margin-bottom: 1em;
+    }
+    /* MAIN CSS */
+    main{
+        padding-top: 150px; 
+    }
+    .project-explanation-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .project-explanation-text p {
+        max-width: 35ch;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #about-the-project-h2{
+        padding-top: 2em;
+        padding-bottom: 0;
+        font-size: 175%;
+        max-width: 100ch;
+        text-align: center;
+        color: rgb(83, 8, 53);
+        text-decoration: overline;
+    }
+    /* WHAT HAS HAPPENED SINCE SECTION */
+    .what-has-happened-since{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .what-has-happened-since p {
+        max-width: 35ch;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+    .what-has-happened-photos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    /* RETURN TO TOP BUTTON CSS */
+    .return-to-top {
+        left: 18px;
+        bottom: 35px;
+    }
+    .return-to-top img {
+        max-width: 40px;
+    }
+    .return-to-top:hover {
+        background-color: rgba(215, 61, 159, 0.328);
+    }    
+    /* FOOTER CSS */
+    footer{
+        padding-top: 0;
     }
 }

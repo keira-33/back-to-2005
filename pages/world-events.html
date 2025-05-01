@@ -3,9 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GOOGLE FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ADOBE FONT LINKS -->
+    <link rel="stylesheet" href="https://use.typekit.net/psp7mwf.css">
+    <!--SlickNav-->
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+    <link rel="shortcut icon" href="../images/2005-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/worlde.css">
     <title>World Events</title>
 </head>
 <body>
-    <h3>"Under Construction"</h3>
+    <div id="logo-nav">
+        <div id="logo-and-text">
+            <img src="../images/2005-logo.png" alt="Homepage Logo" title="Homepage" class="logoimage">
+            <h2>Back to 2005</h2>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="pop-culture.html">Pop Culture</a></li>
+                <li><a href="world-events.html">World Events</a></li>
+            </ul>
+        </nav> 
+    </div>   
+    <header>
+        <div class="header-container">
+            <div class="vert-images-cover-page">
+                <div class="vert-image-grid">
+                    <div><img src="../images/hurricane-katrina-vertical.jpg" alt=""></div>
+                    <div><img src="../images/world-events/rosa-parks.jpg" alt=""></div>
+                    <div><img src="../images/world-events/london-terrorist-attacks.jpg" alt=""></div>
+                    <div id="spain-legalizes-ssm-img"><img src="../images/world-events/spain-legalizes-ssm.jpg" alt=""></div>
+                    <div><img src="../images/world-events/angela-merkel.png" alt=""></div>
+                    <div><img src="../images/pope-john-paul-II.png" alt=""></div>
+                    <div><img src="../images/live-8-concerts.jpg" alt=""></div>
+                </div>
+                <div class="vert-grid-text-overlay">
+                    <h1>World Events <br> in 2005</h1>
+                </div>
+            </div>
+            <div class="ripped-paper-top-img">
+                <img src="../images/paper-ripped-top.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- PRICES NOW AND THEN -->
+        <section>
+            <div class="prices-now-then-container">
+                <div class="instructions-h2">
+                    <div id="prices-now-then-h2">
+                        <h2>Prices Now and Then:</h2>
+                    </div>
+                    <h5 id="instructions">Hover over the common items to see how their average prices have changed since 2005. (Inflation rates not applied)</h5>
+                </div>
+                <!--Images of old/new items and their prices-->
+                <div class="prices-old-new-photos">
+                    <div class="old-new">
+                        <img class="old" src="../images/world-events/big-mac-2025.png" alt="">
+                        <img class="new" src="../images/world-events/big-mac-2005.png" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/world-events/bread-2025.png" alt="">
+                        <img class="new" src="../images/world-events/bread-2005.png" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/world-events/car-new-2025.png" alt="">
+                        <img class="new" src="../images/world-events/car-new-2005.png" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/world-events/house-2025.png" alt="">
+                        <img class="new" src="../images/world-events/house-2005.png" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/world-events/eggs-2025.png" alt="">
+                        <img class="new" src="../images/world-events/eggs-2005.png" alt="">
+                    </div>
+                    <div class="old-new">
+                        <img class="old" src="../images/world-events/flight-2025.png" alt="">
+                        <img class="new" src="../images/world-events/flight-2005.png" alt="">
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- IMPORTANT FIGURES in 2005-->
+        <aside>
+            <h2 id="important-figures-slides-container-h2">Important Figures of the Year:</h2>
+            <div id="important-figures-slides-container">
+                <!--SLIDE SHOW/CAROUSEL-->
+                <div class="imagesanddotscontainer">
+                    <div id="imagesanddots">
+                        <div class="container">
+                            <div class="imagecarousel">
+                                <div class="image fadeout"><img src="../images/world-events/rosa-parks.jpg" alt=""></div>
+                                <div class="image fadeout"><img src="../images/world-events/malcolm-gladwell.jpg" alt=""></div>
+                                <div class="image fadeout"><img src="../images/pope-john-paul-II.png" alt=""></div>
+                                <div class="image fadeout"><img src="../images/world-events/bill-gates-2005.jpg" alt=""></div>
+                                <div class="image fadeout"><img src="../images/world-events/george-w-bush.jpg" alt=""></div>
+                                <div class="image fadeout"><img src="../images/world-events/angela-merkel.png" alt=""></div>
+                                <div class="prev"><i class="fa-solid fa-chevron-left" onclick="showImage(-1)"></i></div>
+                                <div class="next"><i class="fa-solid fa-chevron-right" onclick="showImage(1)"></i></div>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div> 
+                    </div> 
+                    <div id="important-figures-txt">
+                        <ol>
+                            <li><b>Rosa Parks:</b> Rosa Parks, the woman known as the "mother of the civil rights movement," passed away in 2005. Parks turned the course of American history by refusing in 1955 to give up her seat on a bus for a white man (npr.org).</li>
+                            <li><b>Malcolm Gladwell:</b> To Malcolm Gladwell, life's minor mysteries contain the keys to understanding how the world works. In the pages of the New Yorker and in his two books, The Tipping Point and Blink, Gladwell has sought to explain everything. His effortless prose and knack for storytelling have made him the U.S.'s leading pop sociologist (times.com).</li>
+                            <li><b>Pope John Paul II:</b> On April 2, 2005, John Paul II, history’s most well-traveled pope and the first non-Italian to hold the position since the 16th century, died at his home in the Vatican. Six days later, 2 million people packed Vatican City for his funeral (history.com).</li>
+                            <li id="column-break"><b>Bill Gates:</b> Bill Gates was a prominent figure in 2005 for his influence in the fields of business and technology, as well as for his philanthropy. For example, The Bill and Melinda Gates Foundation put $750 million towards global vaccination efforts and their efforts already saved the lives of 670,000 children (time.com).</li>
+                            <li><b>George W. Bush:</b> The second inauguration of George W. Bush as president of the United States took place on Thursday, January 20, 2005, at the West Front of the United States Capitol in Washington, D.C. This was the 55th inauguration (wikipedia.org).</li>
+                            <li><b>Angela Merkel:</b> Angela Merkel was sworn in as Chancellor of Germany on November 22, 2005. She is the first woman and the first East German to hold this office, and is a guiding force for women in politics (bundeskanzler.de).</li>
+                        </ol>
+                    </div>   
+                </div>   
+            </div>
+        </aside>    
+        <p class="star-dividers">✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮ ✮</p>
+        <!-- World E Stories PARAGRAPH -->
+        <section>
+            <div class="stories-paragraph-container">
+                <div class="stories-paragragh">
+                    <p>On 30th June 2005, Spain took a historic step by legalising same-sex marriage, becoming the third country in the world to do so after the Netherlands in 2001 and Belgium in 2003. This progressive move was a testament to Spain's rapid sociopolitical transformation, especially given its conservative past under the dictatorship of Franco. The legislation not only granted same-sex couples the right to marry but also the right to adopt children. While the decision was met with considerable support from the public, it faced opposition from conservative groups and the Roman Catholic Church. Nevertheless, the bill passed in the Spanish Parliament with a majority of 187–147, taking effect three days later. Another significant event was the Live 8 concerts. Live 8, a series of benefit concerts, took place in cities around the world on 2nd July 2005. It had one unified aim: to promote global awareness about the need for aid in Africa. Spearheaded by Bob Geldof and Midge Ure, creators of the original Live Aid concerts in 1985, Live 8 was strategically timed to coincide with the G8 summit being held in Scotland. The goal was to pressure world leaders to commit to increasing aid, cancelling third-world debt, and promoting fair trade. The concerts took place in 10 venues across the world. One notable, horrific event that also occurred was the suicide bombings in London, 2005. The 7th July 2005 London bombings – known as 7/7 – were a series of coordinated suicide attacks on London's public transport system during the morning rush hour. Also in 2005 was the deadly Hurricane Katrina in the U.S. Hurricane Katrina, of the 2005 Atlantic hurricane season, was the costliest – and one of the deadliest hurricanes – in the history of the United States. Of the recorded Atlantic hurricanes, it was sixth strongest overall. (futuretimeline.net) </p>
+                </div>
+                <div class="what-has-happened-photos">
+                    <div><img src="../images/world-events/london-terrorist-attacks.jpg" alt=""></div>
+                    <div><img src="../images/live-8-concerts.jpg" alt=""></div>
+                    <div><img src="../images/world-events/spain-legalizes-ssm.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Return to Top Button -->
+    <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="../images/back-to-top-icon.jpg" alt=""></button></div>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keira Frey Productions</p>
+    </footer>
 </body>
 </html>
+<script src="../js/scripts.js"></script>
+<!-- copyright date JavaScript -->
+<script>
+    const d = new Date();
+    document.getElementById('copyright').innerHTML = d.getFullYear();
+</script>

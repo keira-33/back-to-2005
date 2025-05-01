@@ -70,6 +70,7 @@
     align-items: center;
     gap: 4em;
 }
+/* NEW MODERN PLATFORMS (+SLIDESHOW)  */
 #old-platforms{
     display: flex;
     flex-direction: column;
@@ -109,7 +110,6 @@
     object-fit: cover;
     object-position: top left;
 }
-
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -164,7 +164,17 @@
     align-items: center;
     text-align: center;
 }
+.tech-paragraph-container h2{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 400%;
+    max-width: 40ch;
+    text-align: center;
+    color: rgb(83, 8, 53);
+    margin-bottom: 0;
+}
 .tech-paragragh{
+    text-align: center;
     line-height: 30px;
     max-width: 150ch;
     padding-bottom: 1em;
@@ -180,4 +190,86 @@
     .active {
         background-color: rgb(46, 64, 228);
     }
+}
+/* media queries */
+@media (max-width: 767px) {
+    /* HEADER CSS */
+    .vert-images-cover-page{
+        height: 250px;
+    }    
+    .vert-grid-text-overlay h1{
+        padding-top: .3em;
+        font-size: 85%;
+        letter-spacing: .15rem;
+        line-height: 1em;
+    }
+    .ripped-paper-top-img{
+        top: 140px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    /* TECH NOW AND THEN */
+    #tech-now-then-h2{
+        margin-top: -3.2em;
+        padding-top: 0;
+        font-size: 190%;
+        max-width: 50ch;
+        margin-bottom: .25em;
+    }
+    #instructions{
+        font-size: 130%;
+        font-weight: 500;
+        margin-top: -20px;
+        max-width: 30ch;
+        margin-bottom: 0;
+    }
+    .tech-old-new-photos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0;
+    }
+    /* NEW MODERN PLATFORMS (+SLIDESHOW)  */
+    #old-platforms-h2{
+        font-size: 45.6px;
+        margin-bottom: .5em;
+    }
+    /* SLIDESHOW CSS */
+    .image img {
+        width: 350px;
+        height: 350px;
+    }
+    .prev {
+        left: 3px;
+    }
+    .next {
+        right: 3px;
+    }
+    .active {
+        background-color: rgba(138, 19, 129, 0.672);
+    }  
+    /* NEW TECH P SECTION */
+    .tech-paragraph-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .tech-paragraph-container h2{
+        padding-top: 0;
+        font-size: 46.5px;
+        max-width: 50ch;
+        margin-bottom: 0;
+        color: rgb(83, 8, 53);
+    }
+    .tech-paragragh p {
+        max-width: 35ch;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 25px;
+    }  
 }
