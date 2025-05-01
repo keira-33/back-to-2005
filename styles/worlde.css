@@ -117,6 +117,9 @@
     column-count: 2;
     padding-bottom: 2em;
 }
+#important-figures-txt-mobile-only{
+    display: none;
+}
 #column-break{
     padding-top: 1.8rem;
     break-before: column;
@@ -276,34 +279,22 @@
         max-height: none;
         height: auto;
         flex-grow: 1;
-        min-height: 100vh;
     }
     #important-figures-txt{
-        /* max-width: 35ch;
-        font-size: 16px;
-        line-height: 1.25em;
-        column-count: 1;
-        padding-bottom: 2em;
-        overflow-x: visible;
-        max-height: none;
-        border: 3px solid red; */
-        max-width: 35ch;
-        font-size: 16px;
-        line-height: 1.25em;
-        column-count: 1;
-        padding-bottom: 2em;
-        max-height: none;
-        overflow: visible;
+       display: none;
     }
-    #important-figures-txt {
-        background: rgba(199, 74, 74, 0.3); /* light pink */
+    #important-figures-txt-mobile-only{
+        display: flex;
+        flex-direction: column;
+        max-width: 35ch;
+        line-height: 30px;
+    }
+    #important-figures-txt-mobile-only li{
+        margin-bottom: .5em;
     }
     #column-break{
         padding-top: 0; 
         break-before: none;
-    }
-    ol, li {
-        break-inside: avoid;
     }
     .imagesanddotscontainer{
         display: flex;
@@ -320,11 +311,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    #important-figures-txt li{
-        margin-bottom: .25em;
-        overflow-x: visible;
-        max-height: none;
     }
     .container {
         margin: 0 auto;
@@ -364,7 +350,7 @@
     .stories-paragragh{
         line-height: 30px;
         max-width: 35ch;
-        padding-top: 2em;
+        padding-top: 1em;
         padding-bottom: 1em;
     }
 }

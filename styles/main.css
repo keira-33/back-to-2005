@@ -24,7 +24,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(83, 8, 53, 0.942);
+    background-color: rgba(83, 8, 53, 1);
 }
 #logo-and-text{
     display: flex;
@@ -46,13 +46,11 @@ body{
     filter: brightness(100);
 }
 nav {
-    /* color: aliceblue; */
     text-transform: lowercase;
     font-size: 140%;
     align-items: center;
     padding: 0 2em 0 0;
 }
-
 nav ul {
     display: flex;
     list-style-type: none;
@@ -282,6 +280,12 @@ footer{
 /* media queries */
 @media (max-width: 767px) {
     /* NAV MENU */
+    nav {
+        text-transform: lowercase;
+        font-size: 80%;
+        align-items: center;
+        padding: 0;
+    }
     #nav_menu {
         display: none;
     }
@@ -289,17 +293,19 @@ footer{
         display: block;
     }
     .slicknav_menu {
-        background-color: #FFD1DC;
-        width: 100%;
+        background-color: rgb(83, 8, 53);
+        width: 90%;
+        height: 100%;
         z-index: 9999;
         right: 0px; 
         top: 0px;
     }
     .slicknav_nav{
         width: 100%;
-        background-color: #FFD1DC;
+        background-color: rgb(83, 8, 53);
     }
     .slicknav_nav a {
+        text-align: end;
         text-shadow: 3px 3px 8px rgba(215, 61, 159,.85);
     }
     #logo-nav{
@@ -308,7 +314,7 @@ footer{
         align-items: center;
         max-width: 100%;
         max-height: 3000vh;
-        background-color: rgba(83, 8, 53, 0.942);
+        background-color: rgba(83, 8, 53);
     }
     #logo-and-text{
         display: flex;
