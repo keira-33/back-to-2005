@@ -102,7 +102,6 @@
     gap: 2em;
     align-items: flex-start;
     justify-content: center;
-    /* align-items: center; */
 }
 #imagesanddots{
     display: flex;
@@ -199,7 +198,7 @@
     from {opacity: .2;}
     to {opacity: 1;}
 }
-/* world events stories paragraph css */
+/* WORLD EVENTS STORIES SECTION CSS */
 .stories-paragraph-container{
     display: flex;
     flex-direction: column;
@@ -339,7 +338,7 @@
     .active {
         background-color: rgba(138, 19, 129, 0.672);
     }
-    /* world events stories paragraph css */
+    /* WORLD EVENTS STORIES SECTION CSS */
     .stories-paragraph-container{
         display: flex;
         flex-direction: column;

@@ -1,3 +1,4 @@
+/* TECH NOW AND THEN */
 .tech-now-then-container{
     display: flex;
     flex-direction: column;
@@ -181,6 +182,7 @@
 }
 /* media queries */
 @media (max-width: 800px) {
+    /* SLIDESHOW */
     .image img{
         display: full-width;
         border-radius: 0px;

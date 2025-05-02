@@ -1,4 +1,3 @@
-
 // RETURN TO TOP BUTTON
 // When the user scrolls down 800px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -93,7 +92,7 @@ function showImage() {
     dots[intIndex].className += " active";
 }
 
-// add setInterval function here--> we did this already for reference
+// setInterval function 
 setInterval(()=> {
     showImage();
 },3000);
