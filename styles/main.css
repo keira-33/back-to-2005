@@ -178,6 +178,7 @@ main{
 }
 .project-explanation-text p {
     max-width: 80ch;
+    line-height: 25px;
 }
 #about-the-project-h2{
     font-size: 400%;
