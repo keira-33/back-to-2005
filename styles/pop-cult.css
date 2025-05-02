@@ -141,11 +141,13 @@
     }
     .moments-list ul{
         list-style-type: none;
+        margin: 0 auto;
     }
     .moments-list li{
         width: 28ch;
         line-height: 1.9rem;
         padding-bottom: .5em;
+        margin: 0 auto;
     }
     /* MUSIC GENERATOR */
     #music-generator{
